@@ -73,6 +73,10 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 - Responsive design with dark mode support
 - Fast page loads via static site generation
 
+## Data Source & Acknowledgments
+
+The system prompt data in `docs/` is sourced from [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) by [@x1xhlol](https://github.com/x1xhlol). Huge thanks for the incredible work of collecting and maintaining these AI system prompts!
+
 ## License
 
 Content in `docs/` is sourced from publicly available system prompts. The web application code is proprietary.
