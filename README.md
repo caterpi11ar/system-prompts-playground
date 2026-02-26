@@ -1,4 +1,4 @@
-# AI System Prompts Playground
+# System Prompts Playground
 
 A curated collection of **30+ AI tools' system prompts**, presented as a searchable, SEO-friendly web application built with Next.js 15 and React 19.
 

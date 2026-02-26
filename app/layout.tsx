@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "AI System Prompts Showcase",
-    template: "%s | AI System Prompts",
+    default: "System Prompts Playground",
+    template: "%s | System Prompts Playground",
   },
   description:
     "Browse and explore system prompts from 30+ AI coding assistants, agents, and app builders including Claude Code, Cursor, Windsurf, Devin, v0, and more.",
   openGraph: {
-    title: "AI System Prompts Showcase",
+    title: "System Prompts Playground",
     description:
       "Browse and explore system prompts from 30+ AI tools.",
     type: "website",

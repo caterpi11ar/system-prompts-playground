@@ -13,7 +13,7 @@ export function SiteHeader() {
       <div className="container mx-auto flex h-14 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-semibold text-foreground hover:text-primary transition-colors">
           <BookOpen className="h-5 w-5" />
-          <span>System Prompts</span>
+          <span>System Prompts Playground</span>
         </Link>
         <div className="flex items-center gap-1">
           <a

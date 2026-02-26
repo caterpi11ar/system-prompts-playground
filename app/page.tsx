@@ -10,7 +10,7 @@ export default function Home() {
     <div className="container mx-auto flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center px-4 py-16">
       <div className="mb-12 text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          AI System Prompts
+          System Prompts Playground
         </h1>
         <p className="text-lg text-muted-foreground">
           Browse system prompts from {tools.length}+ AI coding assistants,
