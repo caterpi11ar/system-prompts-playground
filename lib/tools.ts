@@ -27,9 +27,6 @@ export interface ToolSummary {
 
 const DOCS_DIR = path.join(process.cwd(), "docs")
 
-// Directories to skip when scanning
-const SKIP_DIRS = new Set([".git", ".github", "assets"])
-
 // Supported file extensions for prompts
 const SUPPORTED_EXTENSIONS = new Set([".txt", ".json", ".yaml", ".yml"])
 
@@ -214,7 +211,6 @@ function scanDirectory(
 ): void {
   const entries = fs.readdirSync(basePath)
   for (const entry of entries) {
-    if (SKIP_DIRS.has(entry)) continue
     const fullPath = path.join(basePath, entry)
     const stat = fs.statSync(fullPath)
     if (!stat.isDirectory()) continue
@@ -228,7 +224,6 @@ function scanDirectory(
       const subPath = path.join(fullPath, sub)
       return (
         fs.statSync(subPath).isDirectory() &&
-        !SKIP_DIRS.has(sub) &&
         getPromptFiles(subPath).length > 0
       )
     })
