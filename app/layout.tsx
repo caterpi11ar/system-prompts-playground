@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   },
   description:
     "Browse and explore system prompts from 30+ AI coding assistants, agents, and app builders including Claude Code, Cursor, Windsurf, Devin, v0, and more.",
+  verification: {
+    google: "DYr6Q5fSZhD1kffuiU78Y5J1vVfYEUFg5-FHwGp73Tg",
+  },
   openGraph: {
     title: "System Prompts Playground",
     description:
