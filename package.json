@@ -1,6 +1,13 @@
 {
   "name": "system-prompts-playground",
   "version": "0.1.0",
+  "description": "Browse and explore system prompts from 30+ AI coding assistants, agents, and app builders.",
+  "homepage": "https://ai.caterpi11ar.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caterpi11ar/system-prompts-playground.git"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
