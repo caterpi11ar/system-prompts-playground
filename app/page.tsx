@@ -7,23 +7,23 @@ export default function Home() {
   const tools = getToolSummaries()
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="mb-10 text-center space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight">
+    <div className="container mx-auto flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center px-4 py-16">
+      <div className="mb-12 text-center space-y-3">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
           AI System Prompts
         </h1>
-        <p className="text-muted-foreground">
+        <p className="text-lg text-muted-foreground">
           Browse system prompts from {tools.length}+ AI coding assistants,
           agents, and app builders.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-2">
+      <div className="flex max-w-4xl flex-wrap justify-center gap-3">
         {tools.map((tool) => (
           <Link key={tool.slug} href={`/tools/${tool.slug}`}>
             <Badge
               variant="secondary"
-              className="px-3 py-1 text-sm font-medium transition-all duration-200 hover:scale-105 cursor-pointer"
+              className="px-4 py-2 text-base font-medium transition-all duration-200 hover:scale-105 cursor-pointer"
               style={{
                 backgroundColor: tool.color,
                 color: tool.color === "#FACC15" ? "#000000" : "#ffffff",
@@ -33,9 +33,9 @@ export default function Home() {
                 <Image
                   src={tool.icon}
                   alt={tool.name}
-                  width={16}
-                  height={16}
-                  className="mr-1.5"
+                  width={20}
+                  height={20}
+                  className="mr-2"
                 />
               )}
               {tool.name}
