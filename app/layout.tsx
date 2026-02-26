@@ -13,17 +13,41 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ai.caterpi11ar.com"),
   title: {
-    default: "System Prompts Playground",
+    default: "System Prompts Playground — AI Tool System Prompts Collection",
     template: "%s | System Prompts Playground",
   },
   description:
-    "Browse and explore system prompts from 30+ AI coding assistants, agents, and app builders including Claude Code, Cursor, Windsurf, Devin, v0, and more.",
+    "Browse and explore system prompts from 40+ AI coding assistants, agents, and app builders including Claude Code, Cursor, Windsurf, Devin, v0, Lovable, and more. View the exact instructions these AI tools follow.",
+  keywords: [
+    "system prompts",
+    "AI system prompts",
+    "Claude Code prompt",
+    "Cursor prompt",
+    "Windsurf prompt",
+    "AI coding assistant",
+    "LLM prompts",
+    "AI agent prompts",
+    "prompt engineering",
+    "AI tool instructions",
+  ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
+    title: "System Prompts Playground — AI Tool System Prompts Collection",
+    description:
+      "Browse and explore system prompts from 40+ AI coding assistants, agents, and app builders. View the exact instructions these AI tools follow.",
+    type: "website",
+    url: "/",
+    siteName: "System Prompts Playground",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "System Prompts Playground",
     description:
-      "Browse and explore system prompts from 30+ AI tools.",
-    type: "website",
+      "Browse and explore system prompts from 40+ AI coding assistants, agents, and app builders.",
   },
 }
 

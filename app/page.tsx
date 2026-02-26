@@ -6,8 +6,21 @@ import { Badge } from "@/components/ui/badge"
 export default function Home() {
   const tools = getToolSummaries()
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "System Prompts Playground",
+    url: "https://ai.caterpi11ar.com",
+    description:
+      "Browse and explore system prompts from 40+ AI coding assistants, agents, and app builders.",
+  }
+
   return (
     <div className="container mx-auto flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center px-4 py-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mb-12 text-center space-y-3">
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
           System Prompts Playground
